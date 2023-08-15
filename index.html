@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TALLER FRONT</title>
+</head>
+<body>
+    <!-- ESTRUCTURA DE LA BARRA DE NAVEGACION -->
+
+    <header class="bg-black"> <!-- header, representa un contenedor para contenido introductorio o un conjunto de enlaces de navegacion -->
+        
+        <nav class="w-[1440px] flex justify-between mx-auto p-[1.5rem]"> <!-- nav, representa una seccion de una pagina cuyo prosposito es proporcionar enlaces de navegacion -->
+            
+            <div class="text-white"> <!-- div, contenedor generico que funciona commo una caja en la que puedes poner otros elementos -->
+
+                <a href="#">LogoEmpresa</a> <!-- a, representa un hipervinculo -->
+            </div>
+            
+            <!-- La mejor práctica para crear una barra de navegación es colocar las etiquetas <a> dentro de elementos de lista (<li>) que están dentro de una lista no ordenada (<ul>). Esto se hace porque una barra de navegación típicamente contiene una lista de enlaces, y el uso de una lista no ordenada para representar esta lista de enlaces es semánticamente correcto y ayuda a mejorar la accesibilidad de la página. -->
+            
+            <ul class="flex justify-around w-[20%] text-white"> <!-- ul, representa una lista no ordenada -->
+                    <li><a href="#">inicio</a></li> <!-- li, representa el elemento de la lista -->
+                    <li><a href="nosotros.html">nosotros</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    
+    <main class="flex items-center bg-neutral-300 bg-center bg-cover h-[92vh]"> <!-- main, etiqueta que hace referencia a un contenido principal -->
+
+        <section class="w-[1440px] mx-auto"> <!-- section, representa una seccion independiente de un documento -->
+            
+            <!-- ESTRUCTURA BASICA DE UN FORMULARIO -->
+            <form class=" w-[80%] mx-auto h-[85vh] flex flex-col justify-between bg-[#ffffff] rounded-[16px] p-[2rem]" 
+            action="aqui va la url/ruta que va a procesar los datos" 
+            method="se define el metodo de envio al servidor"> <!-- form, representa un formulario que permite al usuario enviar datos/informacion -->
+                
+                <div class="flex gap-[2rem] w-[95%] mx-auto">
+
+                    <div class="mx-auto w-[95%] flex flex-col">
+                        <label class="uppercase " for="nombre">Nombre:</label> <!-- label, representa una descripcion para un elemento del form -->
+                        <input class="focus:outline-none border-b-2 focus:border-b-black p-[1rem] bg-transparent" 
+                        type="text" 
+                        name="nombre" 
+                        id="nombre" 
+                        placeholder="Ingrese su Nombre"/> <!-- input, representa un campo donde el usuario puede ingresar datos -->
+                    </div>
+
+                    <div class="mx-auto w-[95%] flex flex-col">
+                        <label class="uppercase " for="apellido">Apellido:</label>
+                        <input class="focus:outline-none border-b-2 focus:border-b-black p-[1rem] bg-transparent" 
+                        type="text" 
+                        name="apellido" 
+                        id="apellido" 
+                        placeholder="Ingrese su Apellido"/>
+                    </div>
+
+                </div>
+    
+                <div class="mx-auto w-[95%] flex flex-col">
+                    <label class="uppercase " for="email">Correo Electronico:</label>
+                    <input class="focus:outline-none border-b-2 focus:border-b-black p-[1rem] bg-transparent" 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="correo@correo.com"/>
+                </div>
+                
+    
+                <div class="mx-auto w-[95%] flex flex-col">    
+                    <label class="uppercase " for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input class="focus:outline-none border-b-2 focus:border-b-black p-[1rem] bg-transparent" 
+                    type="date" 
+                    name="fecha_nacimiento" 
+                    id="fecha_nacimiento"/>
+                </div>    
+    
+                <div class="mx-auto w-[95%] flex flex-col">    
+                    <label class="uppercase " for="ciudad_residencia">Ciudad de Residencia</label>
+                    <select class="p-[1rem] bg-transparent" name="ciudad_residencia" id="ciudad_residencia"> <!-- select, usamos para crear un menu desplegable -->
+                        <option value="">-- Ciudades --</option> <!-- option, opciones desplegadas -->
+                        <option value="asuncion">Asuncion</option>
+                        <option value="luque">Luque</option>
+                        <option value="san_lorenzo">San Lorenzo</option>
+                        <option value="lambare">Lambare</option>
+                    </select>
+                </div>
+    
+                <div class="mx-auto w-[95%] flex flex-col">
+                    <label class="uppercase " for="descripcion_personal">Descripcion Personal:</label>
+                    <textarea class="focus:outline-none border-b-2 focus:border-b-black bg-transparent" 
+                    name="descripcion_personal" 
+                    id="descripcion_personal" 
+                    cols="30" 
+                    rows="5" 
+                    placeholder="Ingrese una breve descripcion personal"></textarea> <!-- textarea, usado para escribir texto en varias lineas -->
+                </div>
+                
+                
+                <button class="py-[1rem] bg-black text-white rounded-[52px] w-[30%] mt-[2rem] mx-auto" type="submit">Enviar Datos</button> <!-- button/input:submit, enviar la informacion al back -->
+            
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

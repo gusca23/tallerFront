@@ -1,0 +1,87 @@
+TALLER DE HTML Y TAILWIND CSS.
+
+HTML:
+1- PEQUENA INTRODUCCION
+	HTML es un lenguaje de marcado que se utiliza para estructurar el contenido de una página web. Podemos pensar en HTML como el esqueleto de una página web, ya que define la estructura y el contenido de la página.
+	Y como logramos hacer la estructura? con las etiquetas.
+
+2- ETIQUETAS
+	son la base para estructurar y dar formato al contenido en una página web. Las etiquetas permiten al navegador web entender cómo organizar y presentar la información en pantalla. Cada etiqueta tiene un propósito específico, como indicar títulos, párrafos, listas, imágenes, enlaces, entre otros elementos.
+	Las etiquetas HTML son como bloques de construcción que se utilizan para crear diferentes secciones y elementos en una página web.
+
+3- ESTRUCTURA BASICA HTML
+	Un archivo HTML básico tiene una estructura específica que incluye dos partes principales: el head y el body.
+	Mostrar google con inspeccionar.
+
+	3.1- CREAR UNA ESTRUCTURA BASICA DE HTML (ATAJO !)
+	
+		El <head> contiene información sobre el documento, como el título, los enlaces a hojas de estilo y otros metadatos. Esta información no se muestra directamente en la página, pero es importante para el navegador y los motores de búsqueda. podemos pensar en el head como las raizes de un arbol (por mas raro que parezca)
+
+		El <body>, por otro lado, contiene el contenido real de la página que se muestra al usuario. Aquí es donde colocas todo el texto, imágenes, enlaces y otros elementos que quieres que aparezcan en tu página. Continuando con la analogia del arbol, el body sería como el tronco y las ramas del árbol, que sostienen y muestran el contenido de la página.
+
+4- MOSTRAR PRODUCTO TERMINADO Y SU ESTRUCTURA.
+
+5- MOSTRAR IMAGEN DE LA ESTRUCTURA BASICA DE UNA PAG WEB.
+	URL_IMAGEN: https://imacreste.com/wp-content/uploads/etiquetas-estructurales-html5.jpg
+	Para poder llegar a ese resultado veamos como podemos estructurar de forma basica una pag web.
+	Tomando en cuenta la imagen de referencia. que les parece si intentamos dividir por partes el producto terminado?
+
+6- PARTIR EN PARTES EL FORMULARIO.
+	Que les parece si a medida que vamos rompiendo nuestra pagina, la vamos construyendo?
+
+-- BARRA DE NAVEGACION:
+
+    a.) header > nav > <div> <a>logoEmpresa</a> </div>  ul > li > a
+
+	<header>: representa un contenedor para contenido introductorio o un conjunto de enlaces de navegación.
+	<nav>: representa una sección de una página cuyo propósito es proporcionar enlaces de navegación.
+	<ul>: representa una lista no ordenada.
+	<li>: representa un elemento de una lista.
+	<a>: representa un hipervínculo.
+	<div>: representa un contenedor genérico. Funciona como una caja en la que puedes poner otros elementos.
+
+-- SECCION FORMULARIO
+
+    b.) main > section > form > div + label + input > button
+	
+	<section>: representa una sección independiente de un documento.
+	<form>: representa un formulario que permite al usuario enviar información.
+	<label>: representa una descripción para un elemento de formulario.
+	<input>: representa un campo donde el usuario puede ingresar datos.	
+
+La etiqueta select de HTML se utiliza para crear menús desplegables para que los usuarios puedan seleccionar el valor que deseen. Es una función instrumental para recopilar datos que se envían a un servidor. La etiqueta select normalmente va dentro de un elemento de formulario form, con las opciones a elegir codificadas dentro de otra etiqueta, option. También puede ser un elemento independiente que seguiría asociado a un formulario con uno de sus atributos especiales
+
+TAILWIND CSS:
+
+1- PEQUENA INTRODUCCION
+	es un marco de trabajo de CSS que te permite agregar estilos a tu página web de manera rápida y sencilla. 	
+	Siguiendo con la analogía de la construcción, si HTML es el esqueleto de una página web, entonces Tailwind CSS sería como los acabados que le das a la casa, como la pintura, los pisos, etc.
+	funciona escaneando todos tus archivos en busca de nombres de clases, generando los estilos correspondientes
+
+2- CLASES
+	para poder colocar las clases tenemos que entender que las clases son atributos globales que se puede usar en cualquier etiqueta HTML y se puede asignar una o mas clases a la misma etiqueta.
+
+3- PAGINA WEB
+	URL(https://tailwindcss.com/)
+	cdn: colocar en la cabeza del archivo html <script src="https://cdn.tailwindcss.com"></script>
+	Play CDN es una forma de probar Tailwind CSS directamente en el navegador sin necesidad de realizar ningún paso de compilación. El Play CDN está diseñado solo para fines de desarrollo y no es la mejor opción para producción
+
+4- AGREGAR ESTILOS A NUESTRO PROYECTO.
+
+	Antes de iniciar, voy a ayudarles a hacer la barra de navegacion, para asi ir fijando algunos conocimientos que vamos a necesitar para el formulario. Lo primero que es mas evidente es que en nuestro esqueleto/estructura vemos que se ve como una columna y en el resultado final podemos ver que esta todo en fila, existe una propiedad que nos permite realizar esto que se llama flex. Flex permite acomodar los elementos de un contenedor con flexibilidad, es decir, permite alinear y distribuir el espacio entre los elementos de un contenedor de manera eficiente.
+
+	entonces como eso se ve reflejado en nuestro codigo? vamos a la documentacion de tailwind y buscamos (ctrl+k) display flex, y usamos la clase que le corresponde. (vemos lo que paso y decimos que esta horrible)
+
+	IMPORTANTE!! FLEX SIEMPRE PERO SIEMPRE TIENE QUE SER COLOCADO EN LA ETIQUETA PADRE, ASI COMO SUS OTRAS PROPIEDADES.
+	
+	flex de por si no funciona solo, tiene otras propiedades que nos ayudan a lograr el resultado final, estas propiedades son, justify-content y align-items, por lo tanto volvemos a la documentacion y buscamos 
+	justify-content: dice que controla como los elementos del flex son posicionados a lo largo del eje X del contenedor
+	align-items: controla como los elementos del flex son posicionados a lo largo del eje Y del contenedor.
+
+    4.1 DIFERENCIA ENTRE MARGIN Y PADDING.
+	la principal diferencia entre padding y margin es que padding agrega espacio dentro de un elemento, mientras que margin agrega espacio fuera de un elemento. Hablando mal y pronto padding me permite agregar relleno y margin me permite separarme de los elementos.
+ 
+	Ahora que terminamos la barra de navegacion, se animan a hacer el formulario agregando los estilos que se les ocurra?
+
+
+ 
