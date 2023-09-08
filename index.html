@@ -11,16 +11,33 @@
 
     <header class="bg-black"> <!-- header, representa un contenedor para contenido introductorio o un conjunto de enlaces de navegacion -->
         
-        <nav class="w-[1440px] flex justify-between mx-auto p-[1.5rem]"> <!-- nav, representa una seccion de una pagina cuyo prosposito es proporcionar enlaces de navegacion -->
+        <nav class="
+        flex
+        flex-col
+        items-center
+        p-[1.5rem]
+        
+        lg:w-[1440px]
+        lg:flex-row
+        lg:justify-between 
+        lg:mx-auto 
+        "> <!-- nav, representa una seccion de una pagina cuyo prosposito es proporcionar enlaces de navegacion -->
             
             <div class="text-white"> <!-- div, contenedor generico que funciona commo una caja en la que puedes poner otros elementos -->
-
                 <a href="#">LogoEmpresa</a> <!-- a, representa un hipervinculo -->
             </div>
             
             <!-- La mejor práctica para crear una barra de navegación es colocar las etiquetas <a> dentro de elementos de lista (<li>) que están dentro de una lista no ordenada (<ul>). Esto se hace porque una barra de navegación típicamente contiene una lista de enlaces, y el uso de una lista no ordenada para representar esta lista de enlaces es semánticamente correcto y ayuda a mejorar la accesibilidad de la página. -->
             
-            <ul class="flex justify-around w-[20%] text-white"> <!-- ul, representa una lista no ordenada -->
+            <ul class="
+            w-[75%] 
+            text-white
+            flex
+            justify-around
+            mt-4
+            
+            lg:justify-between
+            lg:w-[20%]"> <!-- ul, representa una lista no ordenada -->
                     <li><a href="#">inicio</a></li> <!-- li, representa el elemento de la lista -->
                     <li><a href="nosotros.html">nosotros</a></li>
                     <li><a href="contacto.html">contacto</a></li>
@@ -30,16 +47,37 @@
 
     </header>
     
-    <main class="flex items-center bg-neutral-300 bg-center bg-cover h-[92vh]"> <!-- main, etiqueta que hace referencia a un contenido principal -->
+    <main class="
+    flex 
+    items-center 
+    bg-neutral-300 
+    h-[89vh]
+    
+    lg:h-[92vh]"> <!-- main, etiqueta que hace referencia a un contenido principal -->
 
-        <section class="w-[1440px] mx-auto"> <!-- section, representa una seccion independiente de un documento -->
+        <section class=" 
+        w-[95%] 
+        mx-auto
+        
+        lg:w-[1440px]"> <!-- section, representa una seccion independiente de un documento -->
             
             <!-- ESTRUCTURA BASICA DE UN FORMULARIO -->
-            <form class=" w-[80%] mx-auto h-[85vh] flex flex-col justify-between bg-[#ffffff] rounded-[16px] p-[2rem]" 
+            <form class="
+            mx-auto 
+            h-[80vh] 
+            flex 
+            flex-col 
+            justify-between 
+            bg-[#ffffff] 
+            rounded-[16px] 
+            p-[2rem]
+            
+            lg:w-[80%]" 
+            
             action="aqui va la url/ruta que va a procesar los datos" 
             method="se define el metodo de envio al servidor"> <!-- form, representa un formulario que permite al usuario enviar datos/informacion -->
                 
-                <div class="flex gap-[2rem] w-[95%] mx-auto">
+                <div class="lg:flex lg:gap-[2rem] w-[100%] mx-auto">
 
                     <div class="mx-auto w-[95%] flex flex-col">
                         <label class="uppercase " for="nombre">Nombre:</label> <!-- label, representa una descripcion para un elemento del form -->
